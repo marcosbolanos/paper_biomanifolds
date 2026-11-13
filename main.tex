@@ -1,0 +1,53 @@
+\documentclass{article} % For LaTeX2e
+\usepackage{iclr2027_conference,times}
+
+% Optional math commands from https://github.com/goodfeli/dlbook_notation.
+\input{math_commands.tex}
+
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath,amssymb}
+
+\graphicspath{{figures/}}
+
+\title{Paper Title}
+
+% Authors must not appear in the submitted version. They stay hidden
+% while the \iclrfinalcopy macro below is commented out.
+\author{First Author \\
+Affiliation \\
+\texttt{email@example.com} \\
+\And
+Second Author \\
+Affiliation \\
+\texttt{email@example.com}
+}
+
+\newcommand{\fix}{\marginpar{FIX}}
+\newcommand{\new}{\marginpar{NEW}}
+
+%\iclrfinalcopy % Uncomment for the camera-ready version.
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Write the abstract here. The abstract must be one paragraph.
+\end{abstract}
+
+\input{sections/introduction}
+\input{sections/related_work}
+\input{sections/method}
+\input{sections/experiments}
+\input{sections/conclusion}
+
+\bibliography{references}
+\bibliographystyle{iclr2027_conference}
+
+\appendix
+\input{sections/appendix}
+
+\end{document}
